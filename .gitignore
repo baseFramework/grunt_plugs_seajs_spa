@@ -1,0 +1,9 @@
+node_modules
+private/log
+private/var
+.idea
+*.sublime-project
+*.sublime-workspace
+sftp-config.json
+*.log
+*.txt
