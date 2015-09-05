@@ -4,7 +4,8 @@
   "private": true,
   "homepage": "http://grunt-seajs-spa",
   "dependencies": {
-    "express": "~3.4.6",
+    "express": "~4.13.1",
+    "compression":"~1.5.2",
     "ejs": "~0.8.5",
     "log4js": "~0.6.15",
     "mkdirp": "~0.5.0",
