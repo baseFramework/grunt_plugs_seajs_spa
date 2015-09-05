@@ -5,6 +5,7 @@ define(function (require, exports, module) {
         msg = require('message'),
         $ = require('core/selector'),
         template = require('core/template'),
+        store = require('store/store'),
         index = {},
         uiEvent;
     //事件对象
@@ -29,6 +30,19 @@ define(function (require, exports, module) {
     index.render = function (ctx) {
         console.log('index render');
     };
+
+    index.bindEvent = function(){
+        $('#new-todo').bind('keydown',function(e){
+            if(e.keyCode === 13){
+                inserValue(e);
+            }
+        })
+    };
+
+    function inserValue(e){
+        var val = $('#new-todo').val();
+        store.addData(val);
+    }
 
 
     index.error = function (operate) {

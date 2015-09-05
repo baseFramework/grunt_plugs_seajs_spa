@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "http://grunt-seajs-spa",
   "dependencies": {
+    "todomvc-common": "~1.0.1",
+    "todomvc-app-css": "~1.0.1",
     "express": "~4.13.1",
     "compression":"~1.5.2",
     "ejs": "~0.8.5",
